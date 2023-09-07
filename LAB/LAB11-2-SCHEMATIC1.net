@@ -1,0 +1,16 @@
+* source LAB11-2
+D_D1         N12570 N12648 D1N4001 
+V_V16         N12375 0  
++SIN 0 4 500 0 0 0
+D_D2         N12603 N12648 D1N4001 
+X_U2A         N12342 N12375 V+ V- N12570 LM358
+V_V13         N12342 0 1Vdc
+V_V14         N13025 0 -1Vdc
+R_R37         VO9 V+  1k  
+R_R38         0 VO9  1k  
+V_V6         V+ 0 12Vdc
+X_U1A         N12375 N13025 V+ V- N12603 LM358
+Q_Q1         VO9 N12703 0 Q2N3904
+R_R35         N12648 N12703  10k  
+V_V7         V- 0 -12Vdc
+R_R36         0 N12703  10k  

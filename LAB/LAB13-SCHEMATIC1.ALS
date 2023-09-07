@@ -1,0 +1,11 @@
+.ALIASES
+V_V1            V1(+=VIN -=N00346 ) CN @LAB13.SCHEMATIC1(sch_1):I00056@SOURCE.VSIN.Normal(chips)
+D_D1            D1(1=0 2=VIN ) CN @LAB13.SCHEMATIC1(sch_1):I00093@DIODE.D1N4001.Normal(chips)
+D_D3            D3(1=N00346 2=0 ) CN @LAB13.SCHEMATIC1(sch_1):I00117@DIODE.D1N4001.Normal(chips)
+D_D2            D2(1=VOUT 2=VIN ) CN @LAB13.SCHEMATIC1(sch_1):I00141@DIODE.D1N4001.Normal(chips)
+C_C1            C1(1=0 2=VOUT ) CN @LAB13.SCHEMATIC1(sch_1):I00873@ANALOG.C.Normal(chips)
+D_D4            D4(1=N00346 2=VOUT ) CN @LAB13.SCHEMATIC1(sch_1):I00165@DIODE.D1N4001.Normal(chips)
+R_R1            R1(1=0 2=VOUT ) CN @LAB13.SCHEMATIC1(sch_1):I00218@ANALOG.R.Normal(chips)
+_    _(Vin=VIN)
+_    _(Vout=VOUT)
+.ENDALIASES

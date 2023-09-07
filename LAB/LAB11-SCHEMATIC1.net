@@ -1,0 +1,5 @@
+* source LAB11
+V_V2         N00552 0 0Vdc
+V_V1         N00185 0 0Vdc
+R_R1         N00185 N004220  100k  
+Q_Q1         N00552 N004220 0 Q2N3904

@@ -1,0 +1,9 @@
+* source LAB1_1.5
+R_R1         IN1 OUT1  10k  
+C_C1         0 OUT1  1n  
+V_V1         IN1 0  
++PULSE 0V 5V 0.1ns 0.1ns 0.1ns 100us 200us
+V_V2         VIN-2 0  
++PULSE 0V 5V 0.1ns 0.1ns 0.1ns 100us 100us
+R_R2         VIN-2 VOUT-2  10k  
+C_C2         0 VOUT-2  1n  

@@ -1,0 +1,57 @@
+
+**** 01/18/22 16:05:25 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-Lab1_1.10"  [ D:\KMITL\YEAR1\term2\Circuit&Electronics\Lab1\lab1_1.9-SCHEMATIC1-Lab1_1.10.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab1_1.9-SCHEMATIC1-Lab1_1.10.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN 10m 10ns 0 0.1m 
+----------$
+ERROR -- Invalid value
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab1_1.9-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING lab1_1.9-SCHEMATIC1.net ****
+* source LAB1_1.9
+U_DSTM1         STIM(1,1)
++ $G_DPWR $G_DGND
++ DATA 
++ IO_STM
++ IO_LEVEL=0
++  LABEL = STARTLOOP  
++ +0US 1  
++ +100US 1  
++ +100US 0 
++ +100US 0  
++ +100US 1  
++ +100US 0  
++ +100US 1  
++ +100US 0  
++ +100US 1  
++ +0US GOTO STARTLOOP 100 TIMES  
+X_U1A         DATA NRZ $G_DPWR $G_DGND 7406 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R1         NRZ N00205  1k  
+V_V1         N00205 0 5Vdc
+
+**** RESUMING lab1_1.9-SCHEMATIC1-Lab1_1.10.sim.cir ****
+.END
+

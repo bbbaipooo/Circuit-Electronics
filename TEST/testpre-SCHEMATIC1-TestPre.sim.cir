@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-TestPre"  [ D:\KMITL\YEAR1\term2\Circuit&Electronics\testpre-SCHEMATIC1-TestPre.sim ] 
+
+** Creating circuit file "testpre-SCHEMATIC1-TestPre.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.01s 0 1s 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\testpre-SCHEMATIC1.net" 
+
+
+.END

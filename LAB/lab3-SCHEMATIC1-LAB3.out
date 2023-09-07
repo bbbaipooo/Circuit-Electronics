@@ -1,0 +1,84 @@
+
+**** 03/29/22 13:59:12 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB3"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab3-SCHEMATIC1-LAB3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab3-SCHEMATIC1-LAB3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 50n 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING lab3-SCHEMATIC1.net ****
+* source LAB3
+V_V1         VIN 0  
++SIN 0 1V 1K 0 0 0
+R_R1         VIN VOUT  470  
+L_L1         VOUT 0  10mH  
+
+**** RESUMING lab3-SCHEMATIC1-LAB3.sim.cir ****
+.END
+
+**** 03/29/22 13:59:12 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB3"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab3-SCHEMATIC1-LAB3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/29/22 13:59:12 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB3"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab3-SCHEMATIC1-LAB3.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 0)   =        3.09
+

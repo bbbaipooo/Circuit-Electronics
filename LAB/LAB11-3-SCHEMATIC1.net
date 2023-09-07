@@ -1,0 +1,16 @@
+* source LAB11-3
+V_V3         VA 0 5Vdc
+R_R2         N00859 VA  1  
+R_R3         0 N00859  1k  
+V_V1         V+ 0 12Vdc
+X_U1A         N00826 N00859 V+ V- VO10 LM358
+R_R4         N00826 N00799  1k  
+V_V2         V- 0 -12Vdc
+R_R5         N00799 N00772  1k  
+R_R6         N00772 N00745  1k  
+R_R7         N00745 0  2k  
+R_R8         G N00745  2k  
+R_R9         VA N00772  2k  
+R_R10         G N00799  2k  
+R_R11         VA N00826  2k  
+R_R1         0 VO10  1k  

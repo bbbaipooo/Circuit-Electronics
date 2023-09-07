@@ -1,0 +1,5 @@
+* source LAB4
+L_L1         VIN 0  10mH  
+V_V1         VOUT 0  
++PULSE 0 5V 0.1ns 0.1ns 0.1ns 0.5ms 1ms
+R_R1         VOUT VIN  470  

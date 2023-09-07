@@ -1,0 +1,10 @@
+* source LAB11-1
+R_R11         0 N005752  2.5k  
+R_R10         VB5 VC5  100k  
+V_V1         VC5 0 12Vdc
+V_V2         VIN5 0  
++SIN 0 10m 1k 0 0 0
+Q_Q5         VC5 VB5 N005752 Q2N3904
+R_R7         0 VO5  1k  
+C_C9         VB5 VIN5  10u  
+C_C10         VC5 VO5  10u  

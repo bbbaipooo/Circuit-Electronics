@@ -1,0 +1,21 @@
+* source LAB1_1.9
+U_DSTM1         STIM(1,1)
++ $G_DPWR $G_DGND
++ DATA 
++ IO_STM
++ IO_LEVEL=0
++  LABEL = STARTLOOP  
++ +0US 0  
++ +100US 1  
++ +100US 0 
++ +100US 1  
++ +100US 0  
++ +100US 1  
++ +100US 0  
++ +100US 1  
++ +100US 0  
++ +0US GOTO STARTLOOP 100 TIMES  
+X_U2A         DATA NRZ $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R1         NRZ N01454  1k  
+V_V1         N01454 0 5Vdc

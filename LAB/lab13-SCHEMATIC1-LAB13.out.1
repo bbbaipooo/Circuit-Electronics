@@ -1,0 +1,45 @@
+
+**** 03/29/22 15:42:51 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB13"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab13-SCHEMATIC1-LAB13.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab13-SCHEMATIC1-LAB13.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab13-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING lab13-SCHEMATIC1.net ****
+* source LAB13
+V_V1         VIN N00346  
++SIN 0 10 50 0 0 0
+D_D1         0 VIN D1N4001 
+D_D3         N00346 0 D1N4001 
+D_D2         VOUT VIN D1N4001 
+C_C1         N00909 VOUT  100u  
+D_D4         N00346 VOUT D1N4001 
+R_R1         0 VOUT  1k  
+
+**** RESUMING lab13-SCHEMATIC1-LAB13.sim.cir ****
+.END
+
+ERROR -- Less than 2 connections at node N00909
+ERROR -- Node N00909 is floating

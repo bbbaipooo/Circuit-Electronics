@@ -1,0 +1,5 @@
+* source LAB2
+V_V1         VIN 0  
++SIN 0 1V 1K 0 0 0
+R_R1         VIN VOUT  470  
+C_C2         0 VOUT  1n  

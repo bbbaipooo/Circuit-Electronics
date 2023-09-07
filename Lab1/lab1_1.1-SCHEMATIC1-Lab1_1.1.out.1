@@ -1,0 +1,44 @@
+
+**** 01/18/22 14:15:48 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-Lab1_1.1"  [ D:\KMITL\YEAR1\term2\Circuit&Electronics\Lab1\lab1_1.1-SCHEMATIC1-Lab1_1.1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab1_1.1-SCHEMATIC1-Lab1_1.1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ns 0 1 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab1_1.1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING lab1_1.1-SCHEMATIC1.net ****
+* source LAB1_1.1
+R_R1         B A  500  
+R_R2         A C  1k  
+R_R3         GND A  1.5k  
+V_V1         B GND 12Vdc
+V_V2         C GND 15Vdc
+
+**** RESUMING lab1_1.1-SCHEMATIC1-Lab1_1.1.sim.cir ****
+.END
+
+ERROR -- Node B is floating
+ERROR -- Node A is floating
+ERROR -- Node C is floating
+ERROR -- Node GND is floating

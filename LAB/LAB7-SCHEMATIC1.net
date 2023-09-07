@@ -1,0 +1,5 @@
+* source LAB7
+V_V1         VIN 0  
++SIN 0 10 50 0 0 0
+D_D2         VIN VOUT D1N4001 
+R_R1         0 VOUT  1k  

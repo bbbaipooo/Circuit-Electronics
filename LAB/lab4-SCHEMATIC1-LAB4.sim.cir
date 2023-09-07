@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-LAB4"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab4-SCHEMATIC1-LAB4.sim ] 
+
+** Creating circuit file "lab4-SCHEMATIC1-LAB4.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 4ms 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab4-SCHEMATIC1.net" 
+
+
+.END

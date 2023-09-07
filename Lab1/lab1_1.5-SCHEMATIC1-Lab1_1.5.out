@@ -1,0 +1,91 @@
+
+**** 01/20/22 18:53:19 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-Lab1_1.5"  [ D:\KMITL\year1\term2\Circuit&Electronics\Lab1\lab1_1.5-schematic1-lab1_1.5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab1_1.5-schematic1-lab1_1.5.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ms 0 10us 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab1_1.5-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING lab1_1.5-SCHEMATIC1.net ****
+* source LAB1_1.5
+R_R1         IN1 OUT1  10k  
+C_C1         0 OUT1  1n  
+V_V1         IN1 0  
++PULSE 0V 5V 0.1ns 0.1ns 0.1ns 100us 200us
+V_V2         VIN-2 0  
++PULSE 0V 5V 0.1ns 0.1ns 0.1ns 100us 100us
+R_R2         VIN-2 VOUT-2  10k  
+C_C2         0 VOUT-2  1n  
+
+**** RESUMING lab1_1.5-schematic1-lab1_1.5.sim.cir ****
+.END
+
+WARNING -- Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V2
+WARNING -- Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V2
+**** 01/20/22 18:53:19 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-Lab1_1.5"  [ D:\KMITL\year1\term2\Circuit&Electronics\Lab1\lab1_1.5-schematic1-lab1_1.5.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  IN1)    0.0000  ( OUT1)    0.0000  (VIN-2)    0.0000  (VOUT-2)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/20/22 18:53:19 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-Lab1_1.5"  [ D:\KMITL\year1\term2\Circuit&Electronics\Lab1\lab1_1.5-schematic1-lab1_1.5.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 0)   =         .03
+

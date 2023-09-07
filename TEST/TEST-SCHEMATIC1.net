@@ -1,0 +1,6 @@
+* source TEST
+V_V1         A 0 12Vdc
+V_V2         N00212 0 15Vdc
+R_R1         A B  500  
+R_R2         B N00212  1k  
+R_R3         0 B  1.5k  

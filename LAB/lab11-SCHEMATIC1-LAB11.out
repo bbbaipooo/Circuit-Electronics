@@ -1,0 +1,97 @@
+
+**** 04/05/22 13:26:35 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB11"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab11-SCHEMATIC1-LAB11.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab11-SCHEMATIC1-LAB11.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V2 0 10 0.01 
++ LIN V_V1 0 4 1 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab11-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING lab11-SCHEMATIC1.net ****
+* source LAB11
+V_V2         N00552 0 0Vdc
+V_V1         N00185 0 0Vdc
+R_R1         N00185 N004220  100k  
+Q_Q1         N00552 N004220 0 Q2N3904
+
+**** RESUMING lab11-SCHEMATIC1-LAB11.sim.cir ****
+.END
+
+**** 04/05/22 13:26:35 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB11"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab11-SCHEMATIC1-LAB11.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 04/05/22 13:26:35 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB11"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab11-SCHEMATIC1-LAB11.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 0)   =         .25
+

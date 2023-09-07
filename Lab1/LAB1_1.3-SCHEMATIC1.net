@@ -1,0 +1,7 @@
+* source LAB1_1.3
+V_V1         VCC 0 12Vdc
+R_R1         A VCC  200  
+R_R2         VCC B  10  
+R_Rload         A B  500  
+R_R3         A 0  1000  
+R_R4         0 B  20  

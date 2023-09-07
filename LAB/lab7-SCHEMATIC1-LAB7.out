@@ -1,0 +1,110 @@
+
+**** 03/29/22 15:38:00 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB7"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab7-SCHEMATIC1-LAB7.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab7-SCHEMATIC1-LAB7.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\Orcad_9.2.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms 0 50ns 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\lab7-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING lab7-SCHEMATIC1.net ****
+* source LAB7
+V_V1         VIN 0  
++SIN 0 10 50 0 0 0
+D_D2         VIN VOUT D1N4001 
+R_R1         0 VOUT  1k  
+
+**** RESUMING lab7-SCHEMATIC1-LAB7.sim.cir ****
+.END
+
+**** 03/29/22 15:38:00 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB7"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab7-SCHEMATIC1-LAB7.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4001         
+          IS   14.110000E-09 
+           N    1.984        
+         IKF   94.81         
+          BV   75            
+         IBV   10.000000E-06 
+          RS     .03389      
+          TT    5.700000E-06 
+         CJO   25.890000E-12 
+          VJ     .3245       
+           M     .44         
+
+
+**** 03/29/22 15:38:00 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB7"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab7-SCHEMATIC1-LAB7.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)-22.78E-21  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         2.278E-23
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/29/22 15:38:00 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-LAB7"  [ D:\KMITL\year1\term2\Circuit&Electronics\LAB\lab7-SCHEMATIC1-LAB7.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 0)   =       14.61
+
